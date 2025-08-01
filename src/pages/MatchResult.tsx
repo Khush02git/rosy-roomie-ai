@@ -22,7 +22,7 @@ const MatchResult = () => {
       livingStyle: 'Similar sleep schedules and cleanliness habits'
     },
     {
-      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&fit=crop&crop=face',
+      avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop&crop=face',
       name: 'Emma',
       description: 'Outdoorsy & Social',
       matchScore: 87,
@@ -31,7 +31,7 @@ const MatchResult = () => {
       livingStyle: 'Early risers with organized living spaces'
     },
     {
-      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face',
+      avatar: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=200&h=200&fit=crop&crop=face',
       name: 'Maya',
       description: 'Creative & Studious',
       matchScore: 85,
@@ -40,7 +40,7 @@ const MatchResult = () => {
       livingStyle: 'Quiet study time and cozy living spaces'
     },
     {
-      avatar: 'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=200&h=200&fit=crop&crop=face',
+      avatar: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=200&h=200&fit=crop&crop=face',
       name: 'Zoe',
       description: 'Minimalist & Zen',
       matchScore: 89,
