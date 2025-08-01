@@ -39,7 +39,7 @@ const AvatarGeneration = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-soft relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-peach-sky relative overflow-hidden">
       <Navigation />
       
       {/* Background decorative elements */}
@@ -50,14 +50,14 @@ const AvatarGeneration = () => {
         <div className="max-w-2xl mx-auto text-center space-y-8">
           
           {/* Header */}
-          <div className="space-y-4 animate-fade-in">
-            <h1 className="text-4xl lg:text-5xl font-heading font-bold text-foreground">
+          <div className="space-y-6 animate-fade-in">
+            <h1 className="text-5xl lg:text-7xl font-heading font-bold text-foreground">
               Create Your{' '}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 Avatar
               </span>
             </h1>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-xl lg:text-2xl text-muted-foreground">
               Let's capture your personality to find the perfect roommate match
             </p>
           </div>
@@ -67,7 +67,7 @@ const AvatarGeneration = () => {
             <div className="p-8">
               {!hasAvatar ? (
                 <div className="relative">
-                  <div className="aspect-square max-w-sm mx-auto rounded-2xl overflow-hidden bg-muted/20 border-2 border-dashed border-primary/30">
+                  <div className="aspect-square max-w-lg mx-auto rounded-2xl overflow-hidden bg-muted/20 border-2 border-dashed border-primary/30">
                     <video
                       ref={videoRef}
                       autoPlay
@@ -77,9 +77,9 @@ const AvatarGeneration = () => {
                     />
                     {!videoRef.current?.srcObject && (
                       <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="text-center space-y-4">
-                          <Camera className="h-16 w-16 text-muted-foreground mx-auto" />
-                          <p className="text-muted-foreground">Camera preview will appear here</p>
+                        <div className="text-center space-y-6">
+                          <Camera className="h-24 w-24 text-muted-foreground mx-auto" />
+                          <p className="text-xl text-muted-foreground">Camera preview will appear here</p>
                         </div>
                       </div>
                     )}
@@ -108,9 +108,9 @@ const AvatarGeneration = () => {
                 </div>
               ) : (
                 /* Generated Avatar */
-                <div className="text-center space-y-6">
-                  <div className="relative inline-block">
-                    <div className="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-primary/20 shadow-glow">
+                  <div className="text-center space-y-8">
+                    <div className="relative inline-block">
+                      <div className="w-64 h-64 mx-auto rounded-full overflow-hidden border-4 border-primary/20 shadow-glow">
                       <img
                         src={avatarUrl}
                         alt="Generated avatar"
@@ -122,14 +122,14 @@ const AvatarGeneration = () => {
                     </div>
                   </div>
                   
-                  <div className="space-y-2">
-                    <h3 className="text-2xl font-heading font-semibold text-foreground">
-                      Perfect! ✨
-                    </h3>
-                    <p className="text-muted-foreground">
-                      Your avatar is ready for matching
-                    </p>
-                  </div>
+                    <div className="space-y-4">
+                      <h3 className="text-3xl lg:text-4xl font-heading font-semibold text-foreground">
+                        Perfect! ✨
+                      </h3>
+                      <p className="text-xl text-muted-foreground">
+                        Your avatar is ready for matching
+                      </p>
+                    </div>
                 </div>
               )}
             </div>

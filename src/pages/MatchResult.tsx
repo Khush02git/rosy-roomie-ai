@@ -22,7 +22,7 @@ const MatchResult = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-warm relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-peach-sky relative overflow-hidden">
       <Navigation />
       
       {/* Background decorative elements */}
@@ -33,14 +33,14 @@ const MatchResult = () => {
         <div className="max-w-4xl mx-auto text-center space-y-12">
           
           {/* Header */}
-          <div className="space-y-4 animate-fade-in">
-            <h1 className="text-4xl lg:text-5xl font-heading font-bold text-foreground">
+          <div className="space-y-6 animate-fade-in">
+            <h1 className="text-5xl lg:text-7xl font-heading font-bold text-foreground">
               Perfect{' '}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 Match Found!
               </span>
             </h1>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-xl lg:text-2xl text-muted-foreground">
               We found someone who shares your lifestyle and preferences
             </p>
           </div>
@@ -51,10 +51,10 @@ const MatchResult = () => {
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
               <Card className="bg-gradient-primary shadow-glow rounded-full p-6 border-4 border-background">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary-foreground">
+                  <div className="text-4xl lg:text-5xl font-bold text-primary-foreground">
                     {matchScore}%
                   </div>
-                  <div className="text-sm text-primary-foreground/80">
+                  <div className="text-lg text-primary-foreground/80">
                     Match
                   </div>
                 </div>
@@ -68,7 +68,7 @@ const MatchResult = () => {
               <div className="relative transform rotate-6 hover:rotate-3 transition-transform duration-300">
                 <Card className="overflow-hidden bg-card/60 backdrop-blur-sm border-border/50 shadow-warm rounded-3xl p-6">
                   <div className="text-center space-y-4">
-                    <div className="w-32 h-32 mx-auto rounded-2xl overflow-hidden border-4 border-primary/20">
+                    <div className="w-40 h-40 mx-auto rounded-2xl overflow-hidden border-4 border-primary/20">
                       <img
                         src={userAvatar}
                         alt="Your avatar"
@@ -99,7 +99,7 @@ const MatchResult = () => {
               <div className="relative transform -rotate-6 hover:-rotate-3 transition-transform duration-300">
                 <Card className="overflow-hidden bg-card/60 backdrop-blur-sm border-border/50 shadow-warm rounded-3xl p-6">
                   <div className="text-center space-y-4">
-                    <div className="w-32 h-32 mx-auto rounded-2xl overflow-hidden border-4 border-primary/20">
+                    <div className="w-40 h-40 mx-auto rounded-2xl overflow-hidden border-4 border-primary/20">
                       <img
                         src={matchAvatar}
                         alt="Match avatar"
@@ -123,7 +123,7 @@ const MatchResult = () => {
           
           {/* Compatibility Details */}
           <Card className="bg-card/60 backdrop-blur-sm border-border/50 shadow-warm rounded-3xl p-8 animate-fade-in">
-            <h3 className="text-xl font-heading font-semibold text-foreground mb-6">
+            <h3 className="text-2xl lg:text-3xl font-heading font-semibold text-foreground mb-8">
               Why you're compatible
             </h3>
             <div className="grid md:grid-cols-3 gap-6">

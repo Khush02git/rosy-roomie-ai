@@ -82,6 +82,7 @@ export default {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-warm': 'var(--gradient-warm)',
 				'gradient-soft': 'var(--gradient-soft)',
+				'gradient-peach-sky': 'var(--gradient-peach-sky)',
 			},
 			boxShadow: {
 				'soft': 'var(--shadow-soft)',
