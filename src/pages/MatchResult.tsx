@@ -47,22 +47,9 @@ const MatchResult = () => {
           
           {/* Match Display */}
           <div className="relative animate-scale-in">
-            {/* Match Score */}
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-              <Card className="bg-gradient-primary shadow-glow rounded-full p-6 border-4 border-background">
-                <div className="text-center">
-                  <div className="text-4xl lg:text-5xl font-bold text-primary-foreground">
-                    {matchScore}%
-                  </div>
-                  <div className="text-lg text-primary-foreground/80">
-                    Match
-                  </div>
-                </div>
-              </Card>
-            </div>
             
             {/* Avatar Display */}
-            <div className="flex items-center justify-center gap-8 lg:gap-16 pt-8">
+            <div className="flex items-center justify-center gap-8 lg:gap-16">
               
               {/* User Avatar */}
               <div className="relative transform rotate-6 hover:rotate-3 transition-transform duration-300">
@@ -118,6 +105,20 @@ const MatchResult = () => {
                   <span className="text-primary text-sm">💕</span>
                 </div>
               </div>
+            </div>
+            
+            {/* Match Score - Moved below handshake */}
+            <div className="flex justify-center mt-8">
+              <Card className="bg-gradient-primary shadow-glow rounded-full p-6 border-4 border-background">
+                <div className="text-center">
+                  <div className="text-4xl lg:text-5xl font-bold text-primary-foreground">
+                    {matchScore}%
+                  </div>
+                  <div className="text-lg text-primary-foreground/80">
+                    Match
+                  </div>
+                </div>
+              </Card>
             </div>
           </div>
           
